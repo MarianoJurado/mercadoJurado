@@ -1,0 +1,369 @@
+/* Estilos para el encabezado */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: yellow;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tamaños tipográficos */
+p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  width: 90%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.titulares {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+.precios,
+.descuentos,
+.descripciones,
+body,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+.descuentos,
+.descripciones {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+body,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+div.top-header {
+  padding: 5%;
+}
+
+header div.logo {
+  width: 50%;
+  padding: 10px;
+}
+
+header nav {
+  font-size: 12px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilos para el menú hamburguesa */
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0044aa;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  width: 40px;
+}
+
+/* Estilos para el Pie de página */
+footer {
+  text-align: center;
+}
+
+/* Estilos para los íconos en el Pie de página */
+footer i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Estilos generales para todos los dispositivos */
+.productos,
+.precios,
+.nombre-producto,
+.descuentos,
+main,
+img {
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header .form .input {
+  background-color: #fff;
+  border: 1px solid #000;
+  outline: none;
+  color: #666;
+  padding: 2px;
+}
+
+header .form .submit {
+  background-color: blue;
+  color: white;
+  padding: none;
+  border: none;
+  width: 10%;
+}
+
+header div.top-header p {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+/* Estilos para dispositivos móviles (hasta 360px de ancho) */
+@media (min-width: 360px) {
+  .div-top-header,
+  .site-navbar,
+  .login-navbar .body {
+    display: none;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+}
+
+/* Estilos para tablets (361px o más de ancho) y desktop (769px o más de ancho) */
+@media (min-width: 361px) {
+  .burger-menu {
+    display: none;
+  }
+}
+@media (max-width: 361px) {
+  ul.lista-oferta {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 361px) {
+  article div.main-article {
+    width: 48%; /* Mostrar dos artículos en una fila para tablets */
+  }
+}
+
+/* Estilos para desktop (ancho mínimo 769px) */
+@media only screen and (min-width: 769px) {
+  article div.main-article {
+    width: 23%; /* Mostrar cuatro artículos en una fila para desktop */
+  }
+}
+
+/* CAJA */
+.productos-desc-box {
+  position: relative;
+}
+
+.productos-price {
+  width: 30%;
+  display: inline-block;
+}
+
+.productos-discount {
+  width: 70%;
+  display: inline-block;
+}
+
+.productos-delivery-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+/*color del boton enviar */
+
+button[type="submit"] {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* AQUI LO NUEVO*/
+/*aqui lo nuevo*/
+
+/* Estilos para los productos */
+.productos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+  border-top: 1px solid #ebebeb;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  align-content: flex-end;
+  flex-direction: column;
+}
+
+/* Estilos para la imagen del producto */
+.productos img {
+  width: 100%; 
+  border-radius: 5px; 
+}
+
+/* Estilos para el espacio entre la imagen y el precio descuento */
+.productos .espacio {
+  width: 100%; 
+  text-align: end; 
+}
+
+/* Estilos para el precio y descuento */
+.productos .precio,
+.productos .descuento {
+  width: 30%; 
+  font-size: 18px; 
+  text-align: center; 
+  box-sizing: border-box; 
+}
+
+.productos .descuento {
+  width: 70%; 
+  color: #39b54a; 
+  font-weight: bold; 
+}
+
+/* Estilos para el nombre del producto */
+.productos .nombre-producto {
+  width: 100%; 
+  text-align: center; 
+  margin-top: 10px; 
+  box-sizing: border-box; 
+  /* Asegura que el padding y border no afecten el tamaño total */
+}
+
+/***********************************************************************/
+
+/***********************************************************************/
+
+/* Resto de tus estilos... */
+
+.ultima-visita,
+.lista-oferta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.productos {
+  flex: 1 0 calc(23% - 27px); /* Para la versión desktop, */
+  margin: 15px;
+}
+
+
+@media (max-width: 768px) {
+  .productos {
+    flex-basis: calc(47% - 27px); /* Para tabletas,  */
+  }
+}
+
+@media (max-width: 480px) {
+  .productos {
+    flex-basis: 100%; /* Para móviles,  */
+  }
+}
+
+/*****************estilos***************************/
+
+.productos {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.9s ease;
+}
+
+.productos:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para el ícono del camión */
+.fa-truck {
+  transition: transform 0.9s ease;
+}
+
+.productos:hover .fa-truck {
+  transform: rotate(90deg);
+}
+
+#btn-enviar {
+  background-color: #007bff; 
+  color: #fff; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+#btn-enviar:hover {
+  background-color: #0022aa; 
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white; 
+  color: black; 
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
