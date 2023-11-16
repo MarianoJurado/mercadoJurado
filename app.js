@@ -25,11 +25,6 @@ app.get("/home",(req, res)=>{
 })
 
 
-app.listen(3000, () => {
-  console.log("servidor funcionando...");
-});
-
-
 
 app.listen(PORT,()=>console.log(`servidor corriendo en el puerto ${PORT}`))
 
